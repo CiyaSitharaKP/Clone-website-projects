@@ -1,0 +1,180 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css/);
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(231, 229, 229);
+}
+
+.header {
+    padding: 5px;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 40%;
+}
+
+input {
+    font-size: 20px;
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+}
+.search i{
+    width: 20px;
+    height: 20px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    position: relative;
+}
+
+.login-btn,
+.more-btn,
+.cart-btn,
+.seller-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#login,
+#cart,
+#seller {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-left: 10px;
+}
+
+.dropdown:hover button {
+    background-color: #c3cbc4;
+}
+
+
+
+.top{
+    background-color: white;
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+}
+.top img{
+    width: 100px;
+    height: 100px;
+}
+button , .fashion-btn , .electronics-btn , .home-btn , .toys-btn , .bike-btn {
+    background-color: white;
+    color: black;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.grocery , .mobiles , .fashion , .electronics , .home , .appliances , .flight , .toys  ,.bike  {
+    position: relative;
+    display: inline-block;
+}
+.fashion-options , .electronics-options , .home-options , .toys-options , .bike-options  {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    font-size: 15px;
+}
+
+.fashion-options  a, .electronics-options a , .home-options a , .toys-options a , .bike-options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.fashion-options a:hover , .electronics-options a:hover , .home-options a:hover , .toys-options a:hover , .bike-options a:hover {
+    background-color: #ddd;
+}
+
+.fashion:hover .fashion-options , .electronics:hover .electronics-options , .home:hover .home-options , .toys:hover .toys-options , .bike:hover .bike-options {
+    display: block;
+}
+
+.fashion:hover .fashion-btn , .electronics:hover .electronics-btn , .home:hover .home-btn , .toys:hover .toys-btn , .bike:hover .bike-btn {
+    background-color: #c3cbc4;
+}
+.middle{
+    margin: 8px;
+}
+.middle img{
+    width: 100%;
+}
+.bottom{
+    background-color: white;
+    margin: 8px;
+    display: flex;
+}
+h2{
+    margin: 10px;
+}
+.bottom img{
+    width: 100px;
+    height: 100px;
+}
+.grp{
+    margin: 10px;
+    align-items: center;
+}

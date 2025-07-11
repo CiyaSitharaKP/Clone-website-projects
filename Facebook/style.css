@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e9ebee;
+}
+
+.top {
+ 
+  background-color: #3b5998;
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.login-options {
+    display: flex;
+  gap: 40px;
+}
+.login-options a {
+  color: #dfe3ee;
+  text-decoration: none;
+}
+.login-inputs button {
+  background-color: #4267b2;
+  color: white;
+  border: 1px solid black;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 30px;
+  padding: 0 20px;
+}
+
+.left h2 {
+  font-size: 24px;
+  color: #110487;
+}
+.left img {
+  width: 80%;
+}
+.right {
+  padding: 20px;
+  width: 400px;
+ line-height: 1.5;
+}
+.right h2 {
+  font-size: 24px;
+  color: #110487;
+}
+.signup {
+    display: block;  
+    margin: 20px;
+    padding: 6px;
+    font-size: 14px;
+    
+}
+.grp{
+    margin: 10px;
+}
+
+.signupbtn {
+  background-color: #42b72a;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 10px;
+ 
+}
+.right a{
+    text-decoration: none;
+}
+.right small a{
+    margin-bottom: 10px;
+}
+.create-page{
+    text-align: center;
+    margin-top: 10px;
+}

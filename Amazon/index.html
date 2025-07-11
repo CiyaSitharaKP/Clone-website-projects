@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+        .carousel-overlay-boxes {
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .carousel-overlay-boxes .card {
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .carousel-overlay-boxes img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .carousel-overlay-boxes a {
+            font-size: 0.8rem;
+            margin-top: 4px;
+            margin-bottom: 0;
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        .see-all a {
+            color: rgb(61, 61, 230);
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid " style="height: 50px; padding: 5px;">
+            <img src="Amazon-logo-white.svg.png" class="img-thumbnail " alt="..."
+                style="width: 70px; background-color: rgb(43, 40, 40); border: none;">
+            <button class="btn btn-dark ">
+                <p class="text-white ">Delivering to Calicut 673010 <br><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg><strong> Update location</strong> </p>
+            </button>
+            <form class="d-flex w-50 mx-auto">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    All
+                </button>
+                <input class="form-control me-2" type="search" placeholder="Search in Amazon.in" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0 bg-warning" type="submit"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></button>
+            </form>
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="svg-indian-flag--freesvgorg54530.png" class="img-thumbnail " alt="..."
+                    style="width: 30px; background-color: rgb(43, 40, 40); border: none;">EN
+            </button>
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hello, sign in <br><strong>Accounts & lists</strong>
+            </button>
+            <button class="btn btn-dark " type="button">
+                Returns <br><strong>& Orders</strong>
+            </button>
+            <button class="btn btn-dark " type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Cart</strong>
+            </button>
+        </div>
+    </nav>
+
+    <nav class="navbar second-navbar  navbar-expand-sm bg-secondary navbar-secondary  ">
+        <div class="container-fluid " style="height: 50px; padding: 5px;">
+            <button class="btn btn-secondary ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>All
+            </button>
+            <button class="btn btn-secondary">Fresh</button>
+            <button class="btn btn-secondary">MX Player</button>
+            <button class="btn btn-secondary">Sell</button>
+            <button class="btn btn-secondary">Bestsellers</button>
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Prime</button>
+            <button class="btn btn-secondary">Mobiles</button>
+            <button class="btn btn-secondary">Today's Deal</button>
+            <button class="btn btn-secondary">Customer Service</button>
+            <button class="btn btn-secondary">New Release</button>
+            <button class="btn btn-secondary">Fashion</button>
+            <button class="btn btn-secondary">Amazon Pay</button>
+            <button class="btn btn-secondary">Electronics</button>
+            <button class="btn btn-secondary">Home & Kitchen</button>
+            <button class="btn btn-secondary">Computers</button>
+            <button class="btn btn-secondary">Car & Motorbike</button>
+            <button class="btn btn-secondary">Books</button>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide position-relative " data-bs-ride="carousel" data-bs-interval="3000">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="PC_Hero_2x-toys_1._CB582765723_.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pcc.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="pc.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-overlay-boxes">
+            <div class="card">
+                <h4>Appliances for your home | Up to 55% off</h4>
+                <div class="row g-1">
+                    <div class="col-6">
+                        <img src="b11.jpg" class="img-fluid" alt="">
+                        <a href="#">Air Conditioners</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b12.jpg" class="img-fluid" alt="">
+                        <a href="#">Refrigerators</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b13.jpg" class="img-fluid" alt="">
+                        <a href="#">Microwaves</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b14.jpg" class="img-fluid" alt="">
+                        <a href="#">Washing machines</a>
+                    </div>
+                </div>
+                <div class="see-all">
+                    <a href="#">See more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4>Revamp your home in style</h4>
+                <div class="row g-1">
+                    <div class="col-6">
+                        <img src="b21.jpg" class="img-fluid" alt="">
+                        <a href="#">Cushion covers,bedsheets & more</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b22.jpg" class="img-fluid" alt="">
+                        <a href="#">Figurines,vases & more</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b23.jpg" class="img-fluid" alt="">
+                        <a href="#">Home storage</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b24.jpg" class="img-fluid" alt="">
+                        <a href="#">Lighting solutions</a>
+                    </div>
+                </div>
+                <div class="see-all">
+                    <a href="#">Explore all <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h4>PlayStation 5 Slim & Accessories | No Cost EMI*</h4>
+                <div class="row g-1">
+                    <div class="col-6">
+                        <img src="b31.jpg" class="img-fluid" alt="">
+                        <a href="#">PS5 Slim digital edition</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b32.jpg" class="img-fluid" alt="">
+                        <a href="#">PS5 Slim disc edition</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b33.jpg" class="img-fluid" alt="">
+                        <a href="#"> PS5 Slim Fortnite digital edition</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="b34.jpg" class="img-fluid" alt="">
+                        <a href="#"> PS5 DualSense Wireless Controller</p></a>
+                    </div>
+                </div>
+                <div class="see-all">
+                    <a href="#">See all deals <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>

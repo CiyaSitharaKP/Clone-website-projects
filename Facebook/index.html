@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">facebook</div>
+        <form class="login">
+
+            <div class="login-options">
+                <label><input type="checkbox"> Remember Me?</label>
+                <a href="#">Forgot your password?</a>
+            </div>
+            <div class="login-inputs">
+                <input type="email" placeholder="Email" required>
+                <input type="password" required>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="bottom">
+        <div class="left">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+            <img src="facebook.png">
+        </div>
+        <div class="right">
+            <h2>Sign Up</h2>
+            <p>It's free and always will be.</p>
+            <form class="signup">
+                <div class="grp">
+                    <label>First Name : </label>
+                    <input type="text">
+                </div>
+                <div class="grp">
+                    <label>Last Name : </label>
+                    <input type="text">
+                </div>
+                <div class="grp">
+                    <label>Your Mail : </label>
+                    <input type="email">
+                </div>
+                <div class="grp">
+                    <label>New Password : </label>
+                    <input type="password">
+                </div>
+                <div class="grp">
+                    <label for="gender">I am:</label>
+                    <select id="gender">
+                        <option value="0">Select Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="grp">
+                    <label>Birthday:</label>
+                        <select name="month" id="month">
+                            <option value="0">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                        </select>
+                        <select name="days" id="day">
+                            <option value="0 ">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <select name="years" id="year">
+                            <option value="0">Year</option>
+                            <option value="1">2000</option>
+                            <option value="2">2001</option>
+                        </select>
+                </div>
+
+                <small><a href="#">Why do I need to provide this?</a></small>
+                <div >
+                     <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+               
+            </form>
+            <hr>
+            <p class="create-page"><a href="#">Create a Page</a> for a celebrity, band or business.</p>
+        </div>
+    </div>
+</body>
+
+</html>
